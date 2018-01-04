@@ -22,7 +22,7 @@ function highlight
 %               i.e. before "highlight" was called
 
 %   Zoltan Csati
-%   29/10/2017
+%   03/01/2018
 
 
 
@@ -32,7 +32,7 @@ assert(~isempty(get(0, 'Children')), 'highlight:noExistingFigure', ...
 
 % Context menu to show up by right clicking on the axes
 c = uicontextmenu;
-set(gca, 'UIContextMenu',c);
+set(gcf, 'UIContextMenu',c);
 
 % Highlightable objects
 axesObjects = get(gca, 'Children');
